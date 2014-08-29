@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="b"id="pageone">
+  <div data-role="header">
+    <h1>Seu Corpo Agradece</h1>
+	<div data-role="navbar" >
+    <ul>
+      <li><a href="#pageone"  data-icon="home">Home</a></li>
+      <li><a href="#pagetwo" data-icon="arrow-l" class="ui-btn-active ui-state-persist">clientes </a></li>
+      <li><a href="#historico" data-icon="arrow-r" >Historico</a></li>
+    </ul>
+	</div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+       <p> </p>
+	 <div data-role="" id="myPopup" class="ui-content" style="min-width:250px;">
+		<form method="post" action="demoform.asp">
+			<div>
+			  <h3>Login</h3>
+			  <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+			  <input type="text" name="user" id="usrnm" placeholder="Username">
+			  <label for="pswd" class="ui-hidden-accessible">Password:</label>
+			  <input type="password" name="passw" id="pswd" placeholder="Senha">
+			  <label for="log">Mantenha logado</label>
+			  <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+			  <input type="submit" data-inline="true" value="Log in">
+			</div>
+        </form>
+	 </div>
+  </div>	
+
+  <div data-role="footer">
+    <h3>Arrobatecinformatica</h3>
+  </div>
+</div> 
+<div data-role="page" id="pagetwo" data-theme="b">
+  <div data-role="header">
+    <h1>Cliente e status de compra </h1>
+	<div data-role="navbar" >
+    <ul>
+      <li><a href="#pageone"  data-icon="home">Home</a></li>
+      <li><a href="#pageone" data-icon="arrow-l" class="ui-btn-active ui-state-persist">clientes </a></li>
+      <li><a href="#historico" data-icon="arrow-r" >Historico</a></li>
+    </ul>
+	</div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    	<div data-role="collapsible" data-collapsed="true">
+			<h1>Lista de clientes</h1>
+			<p></p>
+			<form class="ui-filterable">
+			      <input id="myFilter" data-type="search">
+			</form>
+			    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+			      <li><a href="#">Adele</a></li>
+			      <li><a href="#">Agnes</a></li>
+			      <li><a href="#">Albert</a></li>
+			      <li><a href="#">Billy</a></li>
+			      <li><a href="#">Bob</a></li>
+			      <li><a href="#">Calvin</a></li>
+			      <li><a href="#">Cameron</a></li>
+			      <li><a href="#">Chloe</a></li>
+			      <li><a href="#">Christina</a></li>
+			      <li><a href="#">Diana</a></li>
+			      <li><a href="#">Gabriel</a></li>
+			      <li><a href="#">Glen</a></li>
+			      <li><a href="#">Ralph</a></li>
+			      <li><a href="#">Valarie</a></li>
+			    </ul>
+	
+  	</div>
+
+			  <div data-role="footer">
+			    <h1>Footer Text</h1>
+			  </div>
+  </div>
+</div>
+
+<div data-role="page" id="historico" data-theme="b">
+  <div data-role="header">
+    <h1>Cliente e status de compra </h1>
+	<div data-role="navbar" >
+    <ul>
+      <li><a href="#pageone"  data-icon="home">Home</a></li>
+      <li><a href="#pagetwo" data-icon="arrow-l" >clientes </a></li>
+      <li><a href="#pageone" data-icon="arrow-l" class="ui-btn-active ui-state-persist">Historico</a></li>
+    </ul>
+	</div>
+  </div>
+  
+	
+	<div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-collapsed="true">
+			<h1>Clique para ver o historico do mes</h1>
+			<p>Verificando os pedidos do mes</p>
+	  
+			<div data-role="collapsibleset">
+				<div data-role="collapsible">
+					<h3>Para ver pedencias clique aqui</h3>
+					<p><label>Pedidos em aberto: </label></p><br>
+				</div>
+				<div data-role="collapsible">
+					<h3>Para ver pedindos em aberto</h3>
+					<p>Pedidos em atraso de entrega .</p>
+					<label>Data da solicitação:</label>
+					<br>	
+					<label>Data da entrega</label>
+				</div>
+				
+				
+			</div>
+
+			
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+			<h1>Clique para ver o historico da semana</h1>
+			<p>Verificando os pedidos da semana</p>
+	  
+			<div data-role="collapsibleset">
+				<div data-role="collapsible">
+					<h3>Para ver pedencias clique aqui</h3>
+					<p><label>Pedidos em aberto: </label></p><br>
+				</div>
+				<div data-role="collapsible">
+					<h3>Para ver pedindos em aberto</h3>
+					<p>Pedidos em atraso de entrega .</p>
+					<label>Data da solicitação:</label>
+					<br>	
+					<label>Data da entrega</label>
+				</div>
+				
+				
+			</div>
+		</div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>...</p>
+    <a href="#pageone"></a>
+	
+			
+  </div>
+
+  <div data-role="footer">
+    <h3>Arrobatecinformatica</h3>
+  </div>
+</div>
+
+</body>
+</html>
